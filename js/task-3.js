@@ -1,8 +1,6 @@
 function getElementWidth(content, padding, border) {
   const sonuc =
-    Math.ceil(parseFloat(content)) +
-    Math.ceil(2 * parseFloat(padding)) +
-    Math.ceil(2 * parseFloat(border));
+    parseFloat(content) + 2 * parseFloat(padding) + 2 * parseFloat(border);
   return sonuc;
 }
 console.log(getElementWidth("50px", "8px", "4px")); // 74
